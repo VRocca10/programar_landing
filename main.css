@@ -9,6 +9,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    width: 1499px;
+    height: 742px;
 }
 
 .img-fluid {
@@ -58,4 +60,46 @@
 .container-flex {
     display: flex;
     list-style-type: none;
+}
+
+h2::after {
+    content: "";
+    width: 210px;
+    height: 8px;
+    background-color: rgb(237 147 31);
+    display: block;
+    margin: 10px auto;
+}
+
+#quadrado {
+    height: 92px;
+    width: 90px;
+    border: 1px solid #ccc;
+    background-color: rgb(237 147 31);
+    position: absolute;
+    top: 30px;
+}
+
+#text-empresa {
+    z-index: 1;
+    position: relative;
+}
+
+h3 {
+    font-size: 40px;
+    color: rgb(255,255,255);
+}
+
+#subtitle {
+    font-size: 14px;
+    color: rgb(255,255,255);
+}
+
+#profile {
+    width: 1499px;
+    height: 700px;
+}
+
+button {
+    background-color: rgb(237 147 31);
 }
