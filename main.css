@@ -37,16 +37,20 @@
     background-color: rgb(216, 234, 240);
 }
 
-#photo-back {
+#client {
     background-image: url(https://static.wixstatic.com/media/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg/v1/fill/w_1349,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
+    width: 1499px;
+    height: 670px;
 
 }
 
-#background-color-footer {
+#contact {
     background-color: rgb(240,233,233);
+    width: 1499px;
+    height: 715px;
 }
 
 #footer-page {
@@ -54,7 +58,9 @@
     align-items: center;
     background-color: rgb(46,49,56);
     color: #fff;
-    display: flex;
+    display: grid;
+    width: 100%;
+    height: auto;
 }
 
 .container-flex {
@@ -102,4 +108,10 @@ h3 {
 
 button {
     background-color: rgb(237 147 31);
+}
+
+#services {
+    width: 1499px;
+    height: 770px;
+    background-color: rgb(216, 234, 240);
 }
