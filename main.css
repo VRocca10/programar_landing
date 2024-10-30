@@ -1,62 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-#body-image {
+section {
+    height: 100vh;
+}
+
+header {
+    height: 150px;
+}
+
+/* CSS do headline */
+
+#headline {
     background-image: url(https://static.wixstatic.com/media/8a3e6d_653707d69ccc45c28d7b492446b093fc~mv2.jpg/v1/fill/w_1414,h_700,al_t,q_85,enc_auto/8a3e6d_653707d69ccc45c28d7b492446b093fc~mv2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 1499px;
-    height: 742px;
+    width: 100%;
+    height: 750px;
+    z-index: 1
 }
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+}
+
+.quadrado {
+    height: 92px;
+    width: 90px;
+    border: 1px solid #ccc;
+    background-color: rgb(237 147 31);
+    position: relative;
+    top: 30px;
+}
+
+/* CSS do Client */
 
 .img-fluid {
     height: 500px;
 }
 
-#background-color1 {
-    background-color: rgb(20 22 27);
-}
 
-#background-color2 {
-    background-color: rgb(91 111 118);
-}
-
-#background-color3 {
-    background-color: rgb(147 181 196);
-}
-
-#background-color4 {
-    background-color: rgb(183 223 237);
-}
-
-#background-color-div {
-    background-color: rgb(216, 234, 240);
-}
 
 #client {
     background-image: url(https://static.wixstatic.com/media/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg/v1/fill/w_1349,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 1499px;
     height: 670px;
-
+    width: 100%;
 }
 
 #contact {
-    background-color: rgb(240,233,233);
-    width: 1499px;
+    background-color: rgb(240, 233, 233);
     height: 715px;
+    width: 100%;
 }
 
 #footer-page {
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(46,49,56);
+    background-color: rgb(46, 49, 56);
     color: #fff;
     display: grid;
     width: 100%;
@@ -77,41 +106,50 @@ h2::after {
     margin: 10px auto;
 }
 
-#quadrado {
-    height: 92px;
-    width: 90px;
-    border: 1px solid #ccc;
-    background-color: rgb(237 147 31);
-    position: absolute;
-    top: 30px;
-}
-
-#text-empresa {
-    z-index: 1;
-    position: relative;
-}
 
 h3 {
     font-size: 40px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
 
 #subtitle {
     font-size: 14px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
 
 #profile {
-    width: 1499px;
+    width: 100%;
     height: 700px;
 }
 
 button {
-    background-color: rgb(237 147 31);
+    background-color: #ED931F;
 }
 
 #services {
-    width: 1499px;
     height: 770px;
+    width: 100%;
+    background-color: rgb(216, 234, 240);
+}
+
+/* Cores de fundo */
+
+#background-color1 {
+    background-color: rgb(20 22 27);
+}
+
+#background-color2 {
+    background-color: rgb(91 111 118);
+}
+
+#background-color3 {
+    background-color: rgb(147 181 196);
+}
+
+#background-color4 {
+    background-color: rgb(183 223 237);
+}
+
+#background-color-div {
     background-color: rgb(216, 234, 240);
 }
