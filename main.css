@@ -11,12 +11,20 @@
     margin: 0 auto;
 }
 
-section {
-    height: 100vh;
-}
 
 header {
     height: 150px;
+}
+
+.btn-primary {
+    background-color: #ED931F;
+    border: none;
+    font-size: 14px;
+    padding: 10px 40px;
+}
+
+.btn-primary:hover {
+    background-color: #8a5a1b;
 }
 
 /* CSS do headline */
@@ -28,19 +36,44 @@ header {
     background-position: center center;
     width: 100%;
     height: 750px;
-    z-index: 1
+    z-index: 1;
 }
 
-#menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.navbar-brand:hover {
+    display: none;
+
 }
 
-.navbar {
-    position: relative;
+#name {
+    padding-left: 40px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+
+}
+
+#lastname {
+    display: grid;
+    padding-left: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+
+}
+
+/* CSS navbar */
+
+.navbar-collapse {
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.navbar-brand {
     z-index: 1000;
-    padding-top: 80px;
+    color: #fff;
 }
 
 .nav-link {
@@ -50,36 +83,110 @@ header {
     text-align: center;
 }
 
+.nav-link:hover {
+    color: #ED931F;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ED931F;
+}
+
 .quadrado {
-    height: 92px;
-    width: 90px;
-    border: 1px solid #ccc;
+    height: 90px;
+    width: 92px;
+    border: 1px solid rgb(237 147 31);
     background-color: rgb(237 147 31);
-    position: relative;
-    top: 30px;
+    position: absolute;
+}
+
+#text {
+    font-family: "Libre Baskerville", serif;
+    line-height: normal;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+}
+
+/* CSS do Profile */
+
+#profile {
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 80px;
+    border: solid 10px;
+    border-radius: 0;
+    border-color: rgb(183 223 237);
+    display: flex;
+}
+
+.card-subtitle {
+    font-size: 35px;
+    color: #2E3138;
+    font-family: "Libre Baskerville", serif;
+    text-align: start;
+}
+
+.card-text {
+    font-size: 14px;
+    text-align: start;
+}
+
+/* CSS services */
+
+#services {
+    padding: 20px;
+}
+
+.col-md-3 {
+    text-align: center;
+    padding: 70px;
+    display: block;
+    justify-content: center;
+}
+
+.text-center {
+    padding: 40px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 35px;
+
+}
+
+.span-title {
+    color: #fffefe;
+    text-transform: uppercase;
+}
+
+.span-text {
+    color: #fffefe;
+    font-size: 14px;
+}
+
+.services-image {
+    padding-bottom: 20px;
+}
+
+.button-service {
+    margin-top: 50px;
 }
 
 /* CSS do Client */
-
-.img-fluid {
-    height: 500px;
-}
-
-
 
 #client {
     background-image: url(https://static.wixstatic.com/media/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg/v1/fill/w_1349,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 670px;
-    width: 100%;
+
+
 }
 
 #contact {
     background-color: rgb(240, 233, 233);
-    height: 715px;
-    width: 100%;
+
 }
 
 #footer-page {
@@ -88,7 +195,6 @@ header {
     background-color: rgb(46, 49, 56);
     color: #fff;
     display: grid;
-    width: 100%;
     height: auto;
 }
 
@@ -107,28 +213,14 @@ h2::after {
 }
 
 
-h3 {
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
-
 #subtitle {
     font-size: 14px;
     color: rgb(255, 255, 255);
 }
 
-#profile {
-    width: 100%;
-    height: 700px;
-}
-
-button {
-    background-color: #ED931F;
-}
 
 #services {
-    height: 770px;
-    width: 100%;
+
     background-color: rgb(216, 234, 240);
 }
 
