@@ -128,50 +128,61 @@ header {
     color: #2E3138;
     font-family: "Libre Baskerville", serif;
     text-align: start;
+
 }
 
 .card-text {
     font-size: 14px;
     text-align: start;
+    line-height: 1.7em;
 }
 
 /* CSS services */
 
 #services {
     padding: 20px;
+
 }
 
 .col-md-3 {
     text-align: center;
-    padding: 70px;
-    display: block;
-    justify-content: center;
+    padding: 4em;
+    display: grid;
 }
 
 .text-center {
     padding: 40px;
     font-family: "Libre Baskerville", serif;
     font-size: 35px;
-
+    text-transform: uppercase;
 }
 
 .span-title {
     color: #fffefe;
-    text-transform: uppercase;
+    font-family: "Libre Baskerville", serif;
+    font-size: 25px;
+    text-align: center;
 }
 
 .span-text {
     color: #fffefe;
     font-size: 14px;
+    text-align: center;
+    bottom: 40px;
 }
 
 .services-image {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    justify-self: center;
 }
 
-.button-service {
-    margin-top: 50px;
+.article-service-3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 /* CSS do Client */
 
@@ -186,22 +197,18 @@ header {
 
 #contact {
     background-color: rgb(240, 233, 233);
-
 }
 
-#footer-page {
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(46, 49, 56);
+.text-center-client {
+    padding: 40px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    justify-items: center;
     color: #fff;
-    display: grid;
-    height: auto;
 }
 
-.container-flex {
-    display: flex;
-    list-style-type: none;
-}
+
 
 h2::after {
     content: "";
@@ -222,6 +229,95 @@ h2::after {
 #services {
 
     background-color: rgb(216, 234, 240);
+}
+
+/* Contato do CSS */
+
+.text-center-contact {
+    color: rgb(147, 181, 196);
+    padding: 40px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    justify-items: center;
+}
+
+.text-contact {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7em;
+    width: 85%;
+}
+
+form {
+    box-sizing: border-box;
+    width: 90%;
+    max-height: 100%;
+    border-radius: 100px;
+    line-height: 0.2em;
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 3px 3px 3px 24px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    min-width: 100%;
+    height: 125px;
+    padding: 10px 10px 3px 24px;
+    resize: none;
+}
+
+.button-contact {
+    margin-bottom: 10px;
+    display: block;
+    justify-self: end;
+}
+
+h3 {
+    font-family: "Libre Baskerville", serif;
+    color: rgb(237, 147, 31);
+    font-size: 22px;
+    text-align: center;
+    width: 90%;
+}
+
+
+.contact-address {
+    display: block;
+    justify-items: center;
+    text-align: center;
+}
+
+.address {
+    margin-bottom: 100px;
+}
+
+/* CSS do Footer  */
+
+
+#footer-page {
+    background-color: rgb(46, 49, 56);
+    color: #fff;
+}
+
+
+.image-footer {
+    display: flex;
+}
+
+.image-socialmedia {
+    height: 20px;
+    justify-items: baseline;
+}
+
+.container-flex {
+    display: flex;
+    list-style-type: none;
 }
 
 /* Cores de fundo */
