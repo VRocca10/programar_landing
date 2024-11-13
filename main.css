@@ -5,12 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 
 header {
     height: 150px;
@@ -45,30 +39,33 @@ header {
 }
 
 #name {
-    padding-left: 40px;
     font-family: "Libre Baskerville", serif;
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
-    text-align: center;
-    line-height: 1;
-
+    position: absolute;
+    left: 42px;
+    top: 10px;
 }
 
-#lastname {
-    display: grid;
-    padding-left: 40px;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1;
 
+
+#lastname {
+    font-size: 16px;
+    position: absolute;
+    left: 43px;
+    top: 50px;
+    letter-spacing: 2px;
 }
 
 /* CSS navbar */
 
 .navbar-collapse {
     justify-content: flex-end;
-    margin-top: 100px;
+}
+
+.navbar-toggler {
+    background-color: gray;
 }
 
 .navbar-brand {
@@ -91,12 +88,18 @@ header {
     color: #ED931F;
 }
 
+.navbar-nav {
+    float: right;
+}
+
 .quadrado {
     height: 90px;
     width: 92px;
     border: 1px solid rgb(237 147 31);
     background-color: rgb(237 147 31);
-    position: absolute;
+    position: relative;
+    top: 20px;
+    left: 20px;
 }
 
 #text {
@@ -104,7 +107,23 @@ header {
     line-height: normal;
     font-size: 40px;
     color: rgb(255, 255, 255);
+    position: relative;
+    top: 60px;
+    left: 20px;
+}
 
+#subtitle {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 80px;
+    left: 18px;
+}
+
+.button-header {
+    position: relative;
+    top: 110px;
+    left: 20px;
 }
 
 /* CSS do Profile */
@@ -123,12 +142,15 @@ header {
     display: flex;
 }
 
+.image-profile {
+    width:100% ;
+}
+
 .card-subtitle {
     font-size: 35px;
     color: #2E3138;
     font-family: "Libre Baskerville", serif;
     text-align: start;
-
 }
 
 .card-text {
@@ -206,6 +228,7 @@ header {
     text-transform: uppercase;
     justify-items: center;
     color: #fff;
+    text-align: center;
 }
 
 
@@ -219,15 +242,7 @@ h2::after {
     margin: 10px auto;
 }
 
-
-#subtitle {
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-}
-
-
 #services {
-
     background-color: rgb(216, 234, 240);
 }
 
@@ -278,7 +293,9 @@ textarea {
     justify-self: end;
 }
 
-h3 {
+
+
+.h3-contact {
     font-family: "Libre Baskerville", serif;
     color: rgb(237, 147, 31);
     font-size: 22px;
@@ -308,6 +325,10 @@ h3 {
 
 .image-footer {
     display: flex;
+    position: relative;
+    margin-right: 20px;
+    left: 85px;
+    top: 4px;
 }
 
 .image-socialmedia {
@@ -318,6 +339,33 @@ h3 {
 .container-flex {
     display: flex;
     list-style-type: none;
+    position: relative;
+    left: 50px;
+}
+
+.barra {
+    width: 26px;
+    height: 5px;
+    position: relative;
+    top: 18px;
+    border-top: 2px solid;
+    transform: rotate(90deg);
+    color: rgb(108 113 122);
+    left: 200px;
+}
+
+.text-footer {
+    position: absolute;
+    left: 650px;
+    top: 8px;
+    font-size: 14px;
+}
+
+.footer-socialmedia {
+    position: relative;
+    top: 7px;
+    font-size: 14px;
+    left: 85px;
 }
 
 /* Cores de fundo */
