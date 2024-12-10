@@ -45,7 +45,7 @@ header {
     font-weight: bold;
     position: absolute;
     left: 42px;
-    top: 10px;
+    top: 40px;
 }
 
 
@@ -54,11 +54,15 @@ header {
     font-size: 16px;
     position: absolute;
     left: 43px;
-    top: 50px;
+    top: 79px;
     letter-spacing: 2px;
 }
 
 /* CSS navbar */
+
+.navbar-expand-lg .navbar-collapse {
+    margin-top: 70px;
+}
 
 .navbar-collapse {
     justify-content: flex-end;
@@ -97,9 +101,7 @@ header {
     width: 92px;
     border: 1px solid rgb(237 147 31);
     background-color: rgb(237 147 31);
-    position: relative;
-    top: 20px;
-    left: 20px;
+    margin-top: 20px;
 }
 
 #text {
@@ -107,23 +109,18 @@ header {
     line-height: normal;
     font-size: 40px;
     color: rgb(255, 255, 255);
-    position: relative;
-    top: 60px;
-    left: 20px;
+    margin-top: 80px;
+    margin-bottom: 22px;
+
 }
 
 #subtitle {
     font-size: 14px;
     color: rgb(255, 255, 255);
-    position: relative;
-    top: 80px;
-    left: 18px;
 }
 
 .button-header {
-    position: relative;
-    top: 110px;
-    left: 20px;
+    margin-top: 20px;
 }
 
 /* CSS do Profile */
@@ -248,6 +245,7 @@ h2::after {
 
 /* Contato do CSS */
 
+
 .text-center-contact {
     color: rgb(147, 181, 196);
     padding: 40px;
@@ -271,6 +269,7 @@ form {
     max-height: 100%;
     border-radius: 100px;
     line-height: 0.2em;
+    border: none;
 }
 
 .form-control {
@@ -285,14 +284,14 @@ textarea {
     height: 125px;
     padding: 10px 10px 3px 24px;
     resize: none;
+    border: none;
 }
 
 .button-contact {
-    margin-bottom: 10px;
+    margin-bottom: 150px;
     display: block;
     justify-self: end;
 }
-
 
 
 .h3-contact {
@@ -314,58 +313,58 @@ textarea {
     margin-bottom: 100px;
 }
 
+.contact-form {
+}
+
 /* CSS do Footer  */
 
 
 #footer-page {
     background-color: rgb(46, 49, 56);
     color: #fff;
+    height: 50px;
 }
 
 
 .image-footer {
     display: flex;
-    position: relative;
-    margin-right: 20px;
-    left: 85px;
-    top: 4px;
+    margin: 10px;
+    list-style: none;
+    height: 20px;
 }
 
 .image-socialmedia {
     height: 20px;
-    justify-items: baseline;
+    margin-right: 20px;
 }
 
 .container-flex {
     display: flex;
     list-style-type: none;
-    position: relative;
-    left: 50px;
+    justify-content: space-around;
 }
 
 .barra {
     width: 26px;
     height: 5px;
-    position: relative;
-    top: 18px;
     border-top: 2px solid;
     transform: rotate(90deg);
     color: rgb(108 113 122);
-    left: 200px;
+    align-self: center;
 }
 
 .text-footer {
-    position: absolute;
-    left: 650px;
-    top: 8px;
     font-size: 14px;
+    margin: 0;
+    display: flex;
+    align-self: center;
 }
 
 .footer-socialmedia {
-    position: relative;
-    top: 7px;
     font-size: 14px;
-    left: 85px;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 /* Cores de fundo */
