@@ -160,7 +160,7 @@ header {
 
 #services {
     padding: 20px;
-
+    background-color: rgb(216, 234, 240);
 }
 
 .col-md-3 {
@@ -169,33 +169,34 @@ header {
     display: grid;
 }
 
-.text-center {
+#services h2 {
     padding: 40px;
     font-family: "Libre Baskerville", serif;
     font-size: 35px;
     text-transform: uppercase;
+    justify-items: center;
 }
 
-.span-title {
+#services h3 {
     color: #fffefe;
     font-family: "Libre Baskerville", serif;
     font-size: 25px;
     text-align: center;
 }
 
-.span-text {
+#services p {
     color: #fffefe;
     font-size: 14px;
     text-align: center;
     bottom: 40px;
 }
 
-.services-image {
+#services img {
     margin-bottom: 30px;
     justify-self: center;
 }
 
-.article-service-3 {
+#services button {
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -209,16 +210,10 @@ header {
     background-image: url(https://static.wixstatic.com/media/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg/v1/fill/w_1349,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5a0a94_2bb99d4204804188ad7697d85b999be5~mv2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-
-
 }
 
-#contact {
-    background-color: rgb(240, 233, 233);
-}
 
-.text-center-client {
+#client h2 {
     padding: 40px;
     font-family: "Libre Baskerville", serif;
     font-size: 35px;
@@ -228,6 +223,9 @@ header {
     text-align: center;
 }
 
+#client .row {
+    align-items: center;
+}
 
 
 h2::after {
@@ -239,12 +237,13 @@ h2::after {
     margin: 10px auto;
 }
 
-#services {
-    background-color: rgb(216, 234, 240);
-}
+
 
 /* Contato do CSS */
 
+#contact {
+    background-color: rgb(240, 233, 233);
+}
 
 .text-center-contact {
     color: rgb(147, 181, 196);
