@@ -130,17 +130,24 @@ header {
     padding: 20px;
 }
 
-.card {
+.profile-item {
+    display: flex;
+    gap: 30px;
+}
+
+#profile .card-body {
     width: 100%;
     padding: 80px;
     border: solid 10px;
     border-radius: 0;
     border-color: rgb(183 223 237);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-profile {
-    width:100% ;
+    width: 100%;
 }
 
 .card-subtitle {
@@ -175,6 +182,7 @@ header {
     font-size: 35px;
     text-transform: uppercase;
     justify-items: center;
+    text-align: center;
 }
 
 #services h3 {
@@ -223,10 +231,15 @@ header {
     text-align: center;
 }
 
-#client .row {
+.client_image {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
 }
-
 
 h2::after {
     content: "";
@@ -312,8 +325,7 @@ textarea {
     margin-bottom: 100px;
 }
 
-.contact-form {
-}
+
 
 /* CSS do Footer  */
 
@@ -386,4 +398,12 @@ textarea {
 
 #background-color-div {
     background-color: rgb(216, 234, 240);
+}
+
+
+
+@media (max-width: 1150px) {
+    #profile .profile-item {
+        flex-direction: column;
+    }
 }
