@@ -10,6 +10,7 @@ header {
     height: 150px;
 }
 
+/* Reutilização do código */
 .button {
     background-color: #ED931F;
     border: none;
@@ -19,6 +20,15 @@ header {
     color: #fff;
     height: auto;
     width: auto;
+}
+
+#services h2::after,#client h2::after,#contact h2::after {
+    content: "";
+    width: 210px;
+    height: 8px;
+    background-color: rgb(237 147 31);
+    display: block;
+    margin: 10px auto;
 }
 
 .button:hover {
@@ -33,7 +43,6 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    z-index: 1;
 }
 
 .navbar-brand:hover {
@@ -72,11 +81,10 @@ header {
 }
 
 .navbar-toggler {
-    background-color: gray;
+    background-color: rgb(237 147 31 / 30%);
 }
 
 .navbar-brand {
-    z-index: 1000;
     color: #fff;
 }
 
@@ -138,6 +146,7 @@ header {
     gap: 30px;
 }
 
+
 #profile .card-body {
     width: 100%;
     padding: 80px;
@@ -158,6 +167,7 @@ header {
     color: #2E3138;
     font-family: "Libre Baskerville", serif;
     text-align: start;
+    margin-bottom: 20px;
 }
 
 .card-text {
@@ -173,13 +183,14 @@ header {
     background-color: rgb(216, 234, 240);
 }
 
+
 .services-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 100%;
+    height: 500px;
 }
 
 #services h2 {
@@ -241,22 +252,13 @@ header {
     padding-bottom: 40px;
 }
 
-h2::after {
-    content: "";
-    width: 210px;
-    height: 8px;
-    background-color: rgb(237 147 31);
-    display: block;
-    margin: 10px auto;
-}
-
-
 
 /* Contato do CSS */
 
 #contact {
     background-color: rgb(240, 233, 233);
 }
+
 
 .text-center-contact {
     color: rgb(147, 181, 196);
@@ -297,6 +299,7 @@ textarea {
     padding: 10px 10px 3px 24px;
     resize: none;
     border: none;
+    line-height: normal;
 }
 
 .button-contact {
@@ -430,27 +433,37 @@ textarea {
 
 @media (max-width: 991px) {
     .navbar-nav {
-        background-color: rgb(91 111 118);
+        background-color: rgb(237 147 31 / 30%);
+        padding: 8px;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
     .card-subtitle {
         font-size: 25px;
         align-self: center;
         margin-bottom: 15px;
     }
-}
 
-@media (max-width: 430px) {
     .card-text {
         font-size: 12px;
         align-self: center;
     }
-}
 
-@media (max-width: 430px) {
     #profile .card-body {
         padding: 25px;
     }
+
+    .button-contact {
+        justify-self: center;
+    }
+
+    #text {
+        font-size: 28px;
+    } 
+
+    #subtitle {
+        font-size: 12px;
+    }
+
 }
